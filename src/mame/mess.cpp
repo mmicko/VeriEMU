@@ -10,8 +10,8 @@
 
 #include "emu.h"
 
-#define APPNAME                 "MESS"
-#define APPNAME_LOWER           "mess"
+#define APPNAME                 "VeriEMU"
+#define APPNAME_LOWER           "veriemu"
 #define CONFIGNAME              "mess"
 #define COPYRIGHT               "Copyright Nicola Salmoria\nand the MAME team\nhttp://mamedev.org"
 #define COPYRIGHT_INFO          "Copyright Nicola Salmoria and the MAME team"
