@@ -10,19 +10,7 @@
 ---------------------------------------------------------------------------
 
 function mainProject(_target, _subtarget)
-if (_OPTIONS["SOURCES"] == nil) then
-	if (_target == _subtarget) then
-		project (_target)
-	else
-		if (_subtarget=="mess") then
-			project (_subtarget)
-		else
-			project (_target .. _subtarget)
-		end
-	end
-else
-	project (_subtarget)
-end
+	project ("veriemu")
 	uuid (os.uuid(_target .."_" .. _subtarget))
 	kind "ConsoleApp"
 
@@ -97,42 +85,6 @@ end
 		}
 		configuration "**/*"
 			flags { "DeploymentContent" }
-
-	configuration { "x64", "Release" }
-		targetsuffix "64"
-		if _OPTIONS["PROFILE"] then
-			targetsuffix "64p"
-		end
-
-	configuration { "x64", "Debug" }
-		targetsuffix "64d"
-		if _OPTIONS["PROFILE"] then
-			targetsuffix "64dp"
-		end
-
-	configuration { "x32", "Release" }
-		targetsuffix ""
-		if _OPTIONS["PROFILE"] then
-			targetsuffix "p"
-		end
-
-	configuration { "x32", "Debug" }
-		targetsuffix "d"
-		if _OPTIONS["PROFILE"] then
-			targetsuffix "dp"
-		end
-
-	configuration { "Native", "Release" }
-		targetsuffix ""
-		if _OPTIONS["PROFILE"] then
-			targetsuffix "p"
-		end
-
-	configuration { "Native", "Debug" }
-		targetsuffix "d"
-		if _OPTIONS["PROFILE"] then
-			targetsuffix "dp"
-		end
 
 	configuration { "mingw*" or "vs*" }
 		targetextension ".exe"
