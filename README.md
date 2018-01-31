@@ -3,6 +3,7 @@
 
 This is a test playground for testing various Verilog cores. Code will not be synced with MAME in future and main purpose is to use MAME code as testing framework.
 
+It is based on MAME 0.194 release and use corresponding ROMs.
 MAME team is not responsible for code here so please do not contact them related to this project, but use local issues.
 
 

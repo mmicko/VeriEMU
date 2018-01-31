@@ -1518,14 +1518,14 @@ $(GENDIR)/includes/SDL2:
 
 ifeq (posix,$(SHELLTYPE))
 $(GENDIR)/version.cpp: $(GEN_FOLDERS)
-	@echo '#define BARE_BUILD_VERSION "0.193"' > $@
+	@echo '#define BARE_BUILD_VERSION "0.194"' > $@
 	@echo 'extern const char bare_build_version[];' >> $@
 	@echo 'extern const char build_version[];' >> $@
 	@echo 'const char bare_build_version[] = BARE_BUILD_VERSION;' >> $@
 	@echo 'const char build_version[] = BARE_BUILD_VERSION;' >> $@
 else
 $(GENDIR)/version.cpp:
-	@echo #define BARE_BUILD_VERSION "0.193" > $@
+	@echo #define BARE_BUILD_VERSION "0.194" > $@
 	@echo extern const char bare_build_version[]; >> $@
 	@echo extern const char build_version[]; >> $@
 	@echo const char bare_build_version[] = BARE_BUILD_VERSION; >> $@
