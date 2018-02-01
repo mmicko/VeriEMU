@@ -940,6 +940,7 @@ $(error Python is not available in path)
 endif
 
 GENIE := 3rdparty/genie/bin/$(GENIEOS)/genie$(EXE)
+VERILATOR := build/verilator$(EXE)
 
 ifeq ($(TARGET),$(SUBTARGET_FULL))
 FULLTARGET := $(TARGET)
@@ -951,7 +952,7 @@ PROJECTDIR_SDL := $(BUILDDIR)/projects/sdl/$(FULLTARGET)
 PROJECTDIR_WIN := $(BUILDDIR)/projects/windows/$(FULLTARGET)
 
 .PHONY: all clean regenie generate FORCE
-all: $(GENIE) $(TARGETOS)$(ARCHITECTURE)
+all: $(GENIE) $(VERILATOR) $(TARGETOS)$(ARCHITECTURE)
 regenie:
 FORCE:
 
@@ -1499,7 +1500,17 @@ endif
 $(GEN_FOLDERS):
 	-$(call MKDIR,$@)
 
+.PHONY: genie verilator
+
 genie: $(GENIE)
+
+verilator: $(VERILATOR)
+
+VERILATOR_SRC=$(wildcard 3rdparty/verilator/src/*.*)
+
+$(VERILATOR): $(VERILATOR_SRC)
+	$(SILENT) $(GENIE) --file=scripts/verilator.lua --os=$(GENIEOS) gmake 
+	$(SILENT) $(MAKE) $(MAKEPARAMS) -C build/ -f verilator.make config=release
 
 generate: \
 		genie \
