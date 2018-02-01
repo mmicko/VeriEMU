@@ -10,6 +10,68 @@
 ---------------------------------------------------------------------------
 
 --------------------------------------------------
+-- verilated library objects
+--------------------------------------------------
+project "verilated"
+	uuid "083e2a93-88f4-4c22-b542-507f75057e5a"
+	kind "StaticLib"
+	options {
+		"ForceCPP",
+	}
+	
+	includedirs {
+		MAME_DIR .. "3rdparty/verilator/include",
+		MAME_DIR .. "3rdparty/verilator/include/vltstd",
+	}
+	defines {
+		"PLI_DLLISPEC=",
+		"DPI_DLLISPEC=",
+		"VM_TRACE=0",
+		"VM_SC=0",
+		"VL_PRINTF=printf",
+	}
+
+	configuration { "gmake or ninja" }
+		buildoptions {
+			"-Wno-undef",
+			"-Wno-maybe-uninitialized",
+			"-Wno-format",
+			"-Wno-format-security",
+			"-Wno-format-extra-args",
+		}
+
+	configuration { "vs201*" }
+		buildoptions {
+			"/wd4473", -- warning C4473: 'printf' : not enough arguments passed for format string
+			"/wd4701", -- warning C4701: potentially uninitialized local variable 'idx' used
+		}
+	configuration { }
+
+	files {
+		MAME_DIR .. "3rdparty/verilator/include/verilated.cpp",
+		MAME_DIR .. "3rdparty/verilator/include/verilated.h",
+		MAME_DIR .. "3rdparty/verilator/include/verilatedos.h",
+		MAME_DIR .. "3rdparty/verilator/include/verilated_cov.cpp",
+		MAME_DIR .. "3rdparty/verilator/include/verilated_cov.h",
+		MAME_DIR .. "3rdparty/verilator/include/verilated_cov_key.h",
+		MAME_DIR .. "3rdparty/verilator/include/verilated_dpi.cpp",
+		MAME_DIR .. "3rdparty/verilator/include/verilated_dpi.h",
+		MAME_DIR .. "3rdparty/verilator/include/verilated_heavy.h",
+		MAME_DIR .. "3rdparty/verilator/include/verilated_imp.h",
+		MAME_DIR .. "3rdparty/verilator/include/verilated_save.cpp",
+		MAME_DIR .. "3rdparty/verilator/include/verilated_save.h",
+		MAME_DIR .. "3rdparty/verilator/include/verilated_sc.h",
+		MAME_DIR .. "3rdparty/verilator/include/verilated_sc.h",
+		MAME_DIR .. "3rdparty/verilator/include/verilated_syms.h",
+		MAME_DIR .. "3rdparty/verilator/include/verilated_sym_props.h",
+		MAME_DIR .. "3rdparty/verilator/include/verilated_vcd_c.cpp",
+		MAME_DIR .. "3rdparty/verilator/include/verilated_vcd_c.h",
+		MAME_DIR .. "3rdparty/verilator/include/verilated_vpi.cpp",
+		MAME_DIR .. "3rdparty/verilator/include/verilated_vpi.h",
+	}
+
+
+--------------------------------------------------
 -- expat library objects
 --------------------------------------------------
 

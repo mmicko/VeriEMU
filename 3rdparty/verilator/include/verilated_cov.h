@@ -65,7 +65,7 @@
 ///		VL_COVER_INSERT(&m_cases[i], "comment", "Coverage Case", "i", cvtToNumStr(i));
 ///	}
 
-#define VL_COVER_INSERT(countp,args...) \
+#define VL_COVER_INSERT(countp,args,...) \
     VL_IF_COVER(VerilatedCov::_inserti(countp);	\
 		VerilatedCov::_insertf(__FILE__,__LINE__);	\
 		VerilatedCov::_insertp("hier", name(), args))
