@@ -952,9 +952,9 @@ end
 	}
 
 -- warnings only applicable to C++ compiles
-	buildoptions_cpp {
-		"-Woverloaded-virtual",
-	}
+--	buildoptions_cpp {
+--		"-Woverloaded-virtual",
+--	}
 
 if _OPTIONS["SANITIZE"] then
 	buildoptions {
