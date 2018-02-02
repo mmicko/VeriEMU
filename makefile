@@ -863,6 +863,8 @@ GENDIR = $(BUILDDIR)/generated
 
 # all sources are under the src/ directory
 SRC = src
+# all rtl sources are under the rtl/ directory
+RTL = rtl
 
 # all 3rd party sources are under the 3rdparty/ directory
 3RDPARTY = 3rdparty
@@ -940,7 +942,7 @@ $(error Python is not available in path)
 endif
 
 GENIE := 3rdparty/genie/bin/$(GENIEOS)/genie$(EXE)
-VERILATOR := build/verilator$(EXE)
+VERILATOR := build/obj/verilator$(EXE)
 
 ifeq ($(TARGET),$(SUBTARGET_FULL))
 FULLTARGET := $(TARGET)
@@ -1484,10 +1486,11 @@ clean: genieclean
 	$(SILENT) $(MAKE) -C $(SRC)/devices/cpu/m68000 clean
 	-@rm -rf 3rdparty/bgfx/.build
 
-GEN_FOLDERS := $(GENDIR)/$(TARGET)/layout/ $(GENDIR)/$(TARGET)/$(SUBTARGET_FULL)/ $(GENDIR)/mame/drivers/
+GEN_FOLDERS := $(GENDIR)/$(TARGET)/layout/ $(GENDIR)/$(TARGET)/$(SUBTARGET_FULL)/ $(GENDIR)/mame/drivers/ $(GENDIR)/rtl/devices/machine/ $(GENDIR)/rtl/devices/video/ $(GENDIR)/rtl/devices/sound/ $(GENDIR)/rtl/devices/cpu/
 
 rwildcard=$(foreach d,$(wildcard $1*),$(call rwildcard,$d/,$2) $(filter $(subst *,%,$2),$d))
 LAYOUTS=$(wildcard $(SRC)/$(TARGET)/layout/*.lay)
+VERILOG=$(wildcard $(RTL)/*.v)
 
 ifneq (,$(wildcard src/osd/$(OSD)/$(OSD).mak))
 include src/osd/$(OSD)/$(OSD).mak
@@ -1514,10 +1517,15 @@ $(VERILATOR): $(VERILATOR_SRC)
 
 generate: \
 		genie \
+		verilator \
 		$(GEN_FOLDERS) \
 		$(GENDIR)/version.cpp \
 		$(patsubst %.po,%.mo,$(call rwildcard, language/, *.po)) \
 		$(patsubst $(SRC)/%.lay,$(GENDIR)/%.lh,$(LAYOUTS)) \
+		$(patsubst $(RTL)/devices/machine/%.v,$(GENDIR)/rtl/devices/machine/V%.cpp,$(wildcard $(RTL)/devices/machine/*.v)) \
+		$(patsubst $(RTL)/devices/sound/%.v,$(GENDIR)/rtl/devices/sound/V%.cpp,$(wildcard $(RTL)/devices/sound/*.v)) \
+		$(patsubst $(RTL)/devices/video/%.v,$(GENDIR)/rtl/devices/video/V%.cpp,$(wildcard $(RTL)/devices/video/*.v)) \
+		$(patsubst $(RTL)/devices/cpu/%.v,$(GENDIR)/rtl/devices/cpu/V%.cpp,$(wildcard $(RTL)/devices/cpu/*.v)) \
 		$(GENDIR)/mame/drivers/ymmu100.hxx \
 		$(SRC)/devices/cpu/m68000/m68kops.cpp \
 		$(GENDIR)/includes/SDL2
@@ -1543,6 +1551,21 @@ $(GENDIR)/version.cpp:
 	@echo const char build_version[] = BARE_BUILD_VERSION; >> $@
 endif
 
+$(GENDIR)/rtl/devices/machine/V%.cpp: $(RTL)/devices/machine/%.v $(VERILATOR) | $(GEN_FOLDERS)
+	@echo Verilator $<...
+	$(SILENT)$(VERILATOR) --Mdir $(GENDIR)/rtl/devices/machine/ -cc $<
+
+$(GENDIR)/rtl/devices/video/V%.cpp: $(RTL)/devices/video/%.v $(VERILATOR) | $(GEN_FOLDERS)
+	@echo Verilator $<...
+	$(SILENT)$(VERILATOR) --Mdir $(GENDIR)/rtl/devices/video/ -cc $<
+
+$(GENDIR)/rtl/devices/sound/V%.cpp: $(RTL)/devices/sound/%.v $(VERILATOR) | $(GEN_FOLDERS)
+	@echo Verilator $<...
+	$(SILENT)$(VERILATOR) --Mdir $(GENDIR)/rtl/devices/sound/ -cc $<
+
+$(GENDIR)/rtl/devices/cpu/V%.cpp: $(RTL)/devices/cpu/%.v $(VERILATOR) | $(GEN_FOLDERS)
+	@echo Verilator $<...
+	$(SILENT)$(VERILATOR) --Mdir $(GENDIR)/rtl/devices/cpu/ -cc $<
 
 $(GENDIR)/%.lh: $(SRC)/%.lay scripts/build/complay.py | $(GEN_FOLDERS)
 	@echo Compressing $<...
