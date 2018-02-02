@@ -48,11 +48,6 @@ project("verilator")
 
 	defines {
 		"YYDEBUG",
-		"PLI_DLLISPEC=",
-		"DPI_DLLISPEC=",
-		"VM_TRACE=0",
-		"VM_SC=0",
-		"VL_PRINTF=printf",
 		"DEFENV_SYSTEMC=\\\"\\\"",
 		"DEFENV_SYSTEMC_ARCH=\\\"\\\"",
 		"DEFENV_SYSTEMC_INCLUDE=\\\"\\\"",
@@ -62,13 +57,13 @@ project("verilator")
 	
 	configuration { "gmake or ninja" }
 		buildoptions {
-			"-Wno-undef",
-			"-Wno-maybe-uninitialized",
-			"-Wno-format",
-			"-Wno-format-security",
-			"-Wno-format-extra-args",
-			"-Wno-nonnull-compare",
-			"-Wno-unused-parameter"
+			"-faligned-new",
+			"-fno-delete-null-pointer-checks ",
+			"-Wno-unused-parameter",
+			"-Wno-shadow",
+		}
+		linkoptions {
+			"-static"
 		}
 
 	configuration { }
