@@ -1061,7 +1061,7 @@ void AstNode::dumpTreeFile(const string& filename, bool append, bool doDump) {
     editCountSetLast();
 }
 
-void AstNode::v3errorEndFatal(ostringstream& str) const { v3errorEnd(str); assert(0); throw(0);}
+void AstNode::v3errorEndFatal(ostringstream& str) const { v3errorEnd(str); assert(0); }
 
 void AstNode::v3errorEnd(ostringstream& str) const {
     if (!dynamic_cast<const AstNode*>(this)) {

@@ -25,4 +25,4 @@
 
 // Autoconf substitutes this with the strings from AC_INIT.
 #define VERILATOR_PRODUCT    "Verilator"
-#define VERILATOR_VERSION    "3.919 devel"
+#define VERILATOR_VERSION    "3.921 devel"

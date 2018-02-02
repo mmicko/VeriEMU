@@ -21,7 +21,7 @@ CFG_CXXFLAGS_STD_NEWEST = -std=gnu++14
 # Select oldest language (for Verilator internal testing only)
 CFG_CXXFLAGS_STD_OLDEST = -std=gnu++03
 # Compiler flags to use to turn off unused and generated code warnings, such as -Wno-div-by-zero
-CFG_CXXFLAGS_NO_UNUSED =  -faligned-new -Wno-sign-compare -Wno-uninitialized -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable -Wno-shadow
+CFG_CXXFLAGS_NO_UNUSED =  -faligned-new -Wno-bool-operation -Wno-sign-compare -Wno-uninitialized -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable -Wno-shadow
 # Compiler flags that turn on extra warnings
 CFG_CXXFLAGS_WEXTRA =  -Wextra -Wfloat-conversion -Wlogical-op
 

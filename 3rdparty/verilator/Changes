@@ -2,7 +2,15 @@ Revision history for Verilator
 
 The contributors that suggested a given feature are shown in []. Thanks!
 
-* Verilator 3.919 devel
+* Verilator 3.921 devel
+
+
+* Verilator 3.920 2018-02-01
+
+**    Moving forward, use the git "stable" branch to track the latest release,
+      and git "v#.###" tags for specific releases.
+
+***   Support 'assume' similar to 'assert', bug1269. [Dan Gisselquist]
 
 ****  Fix tracing example file output, bug1268. [Enzo Chi]
 
@@ -11,6 +19,10 @@ The contributors that suggested a given feature are shown in []. Thanks!
 ****  Fix compile error on public real parameters by suppressing, bug1261. [Alex Solomatnikov]
 
 ****  Fix input-only tristate comparisons, bug1267. [Alexis G]
+
+****  Fix missing edge type in xml output, msg2480. [Alexis G]
+
+****  Fix compile error with --public and interface bind, bug1264. [Alexis G]
 
 ****  Remove c++filt, bug1265. [Stefan Wallentowitz]
 

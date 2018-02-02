@@ -448,7 +448,7 @@ static const flex_int16_t yy_accept[3713] =
       528,  529,  519,  526,  522,  524,  523,  525,  507,  527,
         0,  539,  540,  497,  499,  498,  538,    0,  544,    0,
       545,  531,  548,  548,  548,  548,  548,  548,  548,  548,
-      548,  548,  548,  237,  548,  548,  548,  548,   94,  548,
+      548,  548,  548,  238,  548,  548,  548,  548,   94,  548,
       548,  548,  548,  548,  548,  548,  548,  548,  548,  548,
       548,  548,  548,  548,  548,  548,  548,  548,  548,  548,
       548,  548,  548,  548,  548,  548,  548,  548,  548,    0,
@@ -461,7 +461,7 @@ static const flex_int16_t yy_accept[3713] =
       548,  548,  548,  548,  548,  548,  548,  548,  548,  406,
       548,  548,  548,  548,  548,  548,  548,  548,  548,  548,
       548,  548,  548,  548,  548,  548,  548,  548,  548,  548,
-      548,  548,  548,  548,  548,  548,  548,  548,  548,  237,
+      548,  548,  548,  548,  548,  548,  548,  548,  548,  238,
       548,  548,  548,  548,  548,  548,  548,  548,  548,  548,
       548,  548,  548,    2,    3,    2,    0,    0,    0,    0,
 
@@ -493,16 +493,16 @@ static const flex_int16_t yy_accept[3713] =
       548,  548,  548,  548,  202,  548,  521,  348,  348,  348,
       348,  348,  348,  348,  348,  348,  348,  348,  348,  348,
       348,  348,  348,  348,  536,  541,  511,  532,  520,  533,
-      512,  546,  548,  548,  548,  548,  548,  228,  548,  548,
+      512,  546,  548,  548,  548,  548,  548,  229,  548,  548,
       548,  548,  548,  548,  548,  548,  548,   82,  548,  548,
-      548,  548,  548,   90,  246,  548,  548,  548,  548,  249,
+      548,  548,  548,   90,  247,  548,  548,  548,  548,  250,
       548,  548,  548,  548,  548,  548,  302,  548,  548,  548,
 
       548,  548,  548,  308,  548,  548,  548,  548,  548,  548,
-      548,  548,  548,  548,  548,  548,  548,  273,  548,  548,
+      548,  548,  548,  548,  548,  548,  548,  274,  548,  548,
       548,  548,  548,  542,  543,  548,  548,   82,  548,  548,
       548,  328,  548,  548,  548,  548,  548,  548,  548,  548,
-      548,  548,  548,  548,  548,  249,  548,  548,    0,    0,
+      548,  548,  548,  548,  548,  250,  548,  548,    0,    0,
       548,  350,  548,  548,  548,  548,  548,  548,  548,  548,
       548,  548,  548,  372,  548,  375,  377,  548,  548,  548,
        82,  548,  387,  548,  548,  548,  548,  548,  548,  395,
@@ -535,14 +535,14 @@ static const flex_int16_t yy_accept[3713] =
       548,  548,  548,  548,  548,  548,  548,  548,  548,  348,
       348,  348,  348,  348,  348,  348,  348,  348,  348,  348,
       215,  348,  348,  348,  348,  348,  348,  348,  534,  535,
-      548,  548,  548,  548,  548,  227,  279,  548,  230,  548,
+      548,  548,  548,  548,  548,  228,  279,  548,  231,  548,
       548,  548,  548,  548,  548,  548,  286,  548,  548,  548,
-      548,  548,  243,  548,  548,  548,  548,  548,  159,  548,
+      548,  548,  244,  548,  548,  548,  548,  548,  159,  548,
       548,  548,  548,  548,  162,  548,  548,  548,  548,  548,
-      303,  548,  548,  548,  548,  548,  259,  260,  548,  548,
+      303,  548,  548,  548,  548,  548,  260,  261,  548,  548,
       548,  548,  548,  548,  548,  548,  548,  314,  548,  133,
 
-      269,  548,  548,  548,  274,  174,  548,  319,  548,  548,
+      270,  548,  548,  548,  275,  174,  548,  319,  548,  548,
       548,  548,  548,  548,  548,  548,  548,  548,  548,  548,
       548,  548,  548,  548,  548,  548,  343,  548,  548,  548,
       347,    0,  548,  548,  548,  548,  548,  355,  548,  548,
@@ -575,13 +575,13 @@ static const flex_int16_t yy_accept[3713] =
       548,  548,  548,  548,  548,  548,  548,  548,  203,  204,
       348,  348,  348,  348,  348,  210,  348,  212,  348,  214,
 
-      348,  348,  275,  219,  222,  348,  348,  276,  548,  548,
-      548,  548,  548,  229,  548,  281,  548,  233,  548,  548,
-      236,  285,  548,  548,  548,  548,  548,  548,  548,  548,
-      548,  548,  245,  548,  548,  548,  548,  548,  548,  548,
-      548,  300,  251,  548,  548,  548,  548,  548,  548,  548,
-      548,  548,  261,  548,  548,  548,  548,  548,  311,  548,
-      548,  548,  312,  548,  548,  548,  548,  548,  271,  548,
+      348,  348,  276,  219,  222,  348,  348,  277,  548,  548,
+      548,  548,  548,  230,  548,  281,  548,  234,  548,  548,
+      237,  285,  548,  548,  548,  548,  548,  548,  548,  548,
+      548,  548,  246,  548,  548,  548,  548,  548,  548,  548,
+      548,  300,  252,  548,  548,  548,  548,  548,  548,  548,
+      548,  548,  262,  548,  548,  548,  548,  548,  311,  548,
+      548,  548,  312,  548,  548,  548,  548,  548,  272,  548,
       548,  548,  548,  548,  548,  548,  548,  157,  548,  548,
       548,  548,  548,  548,  548,  548,  548,  548,  548,  548,
       340,  548,  548,  548,  548,    0,  349,  548,  548,  548,
@@ -591,7 +591,7 @@ static const flex_int16_t yy_accept[3713] =
       548,  548,  548,  548,  548,  390,  548,  394,  548,  548,
       548,  548,  548,  548,  548,  548,  548,  548,  548,  548,
       548,  421,  548,  426,  548,  428,  548,  430,  431,  432,
-      433,  434,  276,  548,  548,  285,  548,  245,  548,   10,
+      433,  434,  277,  548,  548,  285,  548,  246,  548,   10,
         0,  548,  548,  548,    0,    0,    0,    0,    0,    0,
         0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
         0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
@@ -611,21 +611,21 @@ static const flex_int16_t yy_accept[3713] =
       548,  348,  348,  548,  194,  195,  548,  548,  548,  184,
       185,  197,  548,  548,  548,  548,  548,  548,  548,  548,
       191,  548,  205,  348,  348,  208,  209,  348,  348,  348,
-      218,  348,  348,   65,  226,  277,  278,  280,  548,  548,
+      218,  348,  348,   65,  227,  226,  278,  280,  548,  548,
       548,  548,  548,  548,  548,  548,  548,  548,  548,  548,
-      548,  548,  290,  244,  548,  292,  548,  548,  548,  548,
-      247,  248,  548,  548,  548,  548,  548,  548,  548,  548,
-      255,  548,  548,  548,  548,  548,  548,  548,  262,  548,
-      548,  548,  264,  265,  266,  313,  548,  548,  548,  548,
-      272,  548,  548,  548,  320,  548,  548,  548,  548,  321,
+      548,  548,  290,  245,  548,  292,  548,  548,  548,  548,
+      248,  249,  548,  548,  548,  548,  548,  548,  548,  548,
+      256,  548,  548,  548,  548,  548,  548,  548,  263,  548,
+      548,  548,  265,  266,  267,  313,  548,  548,  548,  548,
+      273,  548,  548,  548,  320,  548,  548,  548,  548,  321,
 
       548,  548,  548,  548,  548,  548,  548,  548,  337,  548,
-      548,  272,  548,  548,  548,  548,  548,    0,  548,  352,
+      548,  273,  548,  548,  548,  548,  548,    0,  548,  352,
       548,  354,  548,  358,  548,  362,  366,  548,  548,  548,
       548,  548,  380,  548,  548,  548,  548,  548,  548,  548,
       548,  393,  548,  397,  548,  548,  548,  405,  409,  411,
-      548,  548,  548,  548,  548,  423,  548,  548,  226,  548,
-      265,   11,  548,  548,  548,    0,    0,    0,    0,    0,
+      548,  548,  548,  548,  548,  423,  548,  548,  227,  548,
+      266,   11,  548,  548,  548,    0,    0,    0,    0,    0,
         0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
         0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
         0,    0,  348,  348,   20,  348,   23,   26,   29,  348,
@@ -642,11 +642,11 @@ static const flex_int16_t yy_accept[3713] =
       348,  548,  548,  548,  548,  198,  548,  200,  201,  548,
 
       548,  548,  548,  548,  348,  348,  348,  348,  216,  348,
-      348,  548,  231,  548,  548,  234,  548,  548,  548,  548,
+      348,  548,  232,  548,  548,  235,  548,  548,  548,  548,
       548,  548,  548,  548,  548,  548,  548,  291,  548,  548,
-      548,  548,  548,  548,  548,  548,  252,  301,  253,  254,
-      548,  257,  548,  548,  548,  548,  548,  548,  548,  548,
-      548,  548,  548,  270,  316,  548,  548,  548,  324,  548,
+      548,  548,  548,  548,  548,  548,  253,  301,  254,  255,
+      548,  258,  548,  548,  548,  548,  548,  548,  548,  548,
+      548,  548,  548,  271,  316,  548,  548,  548,  324,  548,
       548,  327,  548,  548,  548,  548,  548,  548,  335,  548,
       548,  322,  548,  342,  548,  548,  346,    0,  548,  353,
       548,  548,  368,  548,  548,  548,  548,  548,  548,  548,
@@ -665,10 +665,10 @@ static const flex_int16_t yy_accept[3713] =
 
       125,  126,  548,  140,  348,  548,  548,  548,  183,  199,
       548,  548,  548,  548,  192,  348,  348,  348,  348,  217,
-      348,  221,  548,  548,  548,  232,  548,  235,  548,  548,
+      348,  221,  548,  548,  548,  233,  548,  236,  548,  548,
       287,  548,  288,  548,  548,  548,  548,  548,  548,  294,
-      548,  548,  548,  548,  298,  548,  256,  258,  548,  305,
-      548,  548,  309,  263,  548,  548,  548,  268,  548,  318,
+      548,  548,  548,  548,  298,  548,  257,  259,  548,  305,
+      548,  548,  309,  264,  548,  548,  548,  269,  548,  318,
       548,  548,  548,  329,  548,  331,  332,  548,  548,  548,
       548,  548,  548,  548,  548,  570,  351,  548,  359,  548,
       548,  548,  548,  548,  379,  548,  548,  548,  548,  548,
@@ -686,7 +686,7 @@ static const flex_int16_t yy_accept[3713] =
       548,  548,  548,  348,  348,  348,  348,  348,  548,  224,
 
       548,  548,  548,  548,  548,  548,  548,  548,  548,  548,
-      548,  548,  548,  250,  297,  299,  304,  306,  548,  310,
+      548,  548,  548,  251,  297,  299,  304,  306,  548,  310,
       548,  548,  548,  323,  548,  548,  330,  548,  548,  548,
       548,  548,  548,  548,  548,  548,  548,  548,  548,  548,
       548,  548,  548,  548,  384,  548,  548,  548,  548,  548,
@@ -700,7 +700,7 @@ static const flex_int16_t yy_accept[3713] =
       632,  632,  632,  632,  632,  632,  632,  632,  632,  632,
       632,  632,  632,  632,  548,  548,   87,  548,  548,  186,
       548,  548,  548,  206,  348,  211,  213,  348,  548,  548,
-      282,  283,  284,  548,  548,  240,  241,  548,  548,  548,
+      282,  283,  284,  548,  548,  241,  242,  548,  548,  548,
       548,  548,  548,  315,  548,  317,  325,  326,  548,  334,
       548,  548,  548,  341,  344,  548,  357,  548,  548,  371,
       376,  378,  548,  548,  548,  548,  388,  548,  396,  548,
@@ -713,8 +713,8 @@ static const flex_int16_t yy_accept[3713] =
       632,  632,  632,  632,  632,  632,  632,  632,  587,  632,
       632,  632,  632,  632,  632,  632,  597,  632,  632,  632,
       632,  632,  632,  632,  632,  604,  632,   84,  548,   99,
-      182,  548,  548,  548,  207,  348,  223,  548,  238,  548,
-      242,  289,  293,  295,  548,  548,  548,  548,  548,  548,
+      182,  548,  548,  548,  207,  348,  223,  548,  239,  548,
+      243,  289,  293,  295,  548,  548,  548,  548,  548,  548,
       548,  548,  548,  548,  548,  548,  548,  385,  548,  548,
       548,  548,  413,  429,  548,    5,    8,  572,    0,    0,
 
@@ -724,7 +724,7 @@ static const flex_int16_t yy_accept[3713] =
         0,    0,  632,  632,  632,  632,  632,  632,  632,  632,
       632,  632,  632,  632,  632,  632,  632,  632,  632,  632,
       632,  632,  632,  632,  632,  632,  632,  604,  604,  632,
-       86,  548,  548,  548,  348,  225,  239,  296,  307,  548,
+       86,  548,  548,  548,  348,  225,  240,  296,  307,  548,
       333,  336,  548,  548,  345,  548,  370,  548,  548,  548,
       548,  399,  548,  548,    4,    0,    0,    0,    0,    0,
         0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
@@ -734,7 +734,7 @@ static const flex_int16_t yy_accept[3713] =
         0,  435,  632,  632,  632,  632,  632,  632,  632,  632,
       632,  632,  632,  614,  632,  632,  591,  632,  632,  632,
       632,  632,  632,  632,  632,  615,  616,  632,  632,  632,
-      632,  632,  548,  548,  190,  348,  267,  548,  548,  369,
+      632,  632,  548,  548,  190,  348,  268,  548,  548,  369,
       381,  548,  383,  389,  404,  548,    0,    0,    0,    0,
         0,    0,    0,    0,    0,    0,    0,  614,    0,    0,
       591,    0,    0,    0,    0,    0,    0,    0,    0,  615,
@@ -3156,7 +3156,7 @@ static const flex_int16_t yy_rule_linenum[636] =
       456,  457,  458,  459,  460,  461,  462,  463,  464,  465,
       466,  467,  468,  469,  470,  471,  472,  473,  474,  475,
       476,  477,  478,  479,  480,  481,  482,  483,  484,  485,
-      486,  487,  488,  489,  492,  493,  494,  495,  496,  497,
+      486,  487,  488,  489,  490,  493,  494,  495,  496,  497,
       498,  499,  500,  501,  502,  503,  504,  505,  506,  507,
       508,  509,  510,  511,  512,  513,  514,  515,  516,  517,
 
@@ -4815,255 +4815,255 @@ YY_RULE_SETUP
 case 226:
 YY_RULE_SETUP
 #line 441 "../verilog.l"
-{ FL; return yASSERT; }
+{ FL; return yASSUME; }
 	YY_BREAK
 case 227:
 YY_RULE_SETUP
 #line 442 "../verilog.l"
-{ FL; return yBIND; }
+{ FL; return yASSERT; }
 	YY_BREAK
 case 228:
 YY_RULE_SETUP
 #line 443 "../verilog.l"
-{ FL; return yBIT; }
+{ FL; return yBIND; }
 	YY_BREAK
 case 229:
 YY_RULE_SETUP
 #line 444 "../verilog.l"
-{ FL; return yBREAK; }
+{ FL; return yBIT; }
 	YY_BREAK
 case 230:
 YY_RULE_SETUP
 #line 445 "../verilog.l"
-{ FL; return yBYTE; }
+{ FL; return yBREAK; }
 	YY_BREAK
 case 231:
 YY_RULE_SETUP
 #line 446 "../verilog.l"
-{ FL; return yCHANDLE; }
+{ FL; return yBYTE; }
 	YY_BREAK
 case 232:
 YY_RULE_SETUP
 #line 447 "../verilog.l"
-{ FL; return yCLOCKING; }
+{ FL; return yCHANDLE; }
 	YY_BREAK
 case 233:
 YY_RULE_SETUP
 #line 448 "../verilog.l"
-{ FL; return yCONST__LEX; }
+{ FL; return yCLOCKING; }
 	YY_BREAK
 case 234:
 YY_RULE_SETUP
 #line 449 "../verilog.l"
-{ FL; return yCONTEXT; }
+{ FL; return yCONST__LEX; }
 	YY_BREAK
 case 235:
 YY_RULE_SETUP
 #line 450 "../verilog.l"
-{ FL; return yCONTINUE; }
+{ FL; return yCONTEXT; }
 	YY_BREAK
 case 236:
 YY_RULE_SETUP
 #line 451 "../verilog.l"
-{ FL; return yCOVER; }
+{ FL; return yCONTINUE; }
 	YY_BREAK
 case 237:
 YY_RULE_SETUP
 #line 452 "../verilog.l"
-{ FL; return yDO; }
+{ FL; return yCOVER; }
 	YY_BREAK
 case 238:
 YY_RULE_SETUP
 #line 453 "../verilog.l"
-{ FL; return yENDCLOCKING; }
+{ FL; return yDO; }
 	YY_BREAK
 case 239:
 YY_RULE_SETUP
 #line 454 "../verilog.l"
-{ FL; return yENDINTERFACE; }
+{ FL; return yENDCLOCKING; }
 	YY_BREAK
 case 240:
 YY_RULE_SETUP
 #line 455 "../verilog.l"
-{ FL; return yENDPACKAGE; }
+{ FL; return yENDINTERFACE; }
 	YY_BREAK
 case 241:
 YY_RULE_SETUP
 #line 456 "../verilog.l"
-{ FL; return yENDPROGRAM; }
+{ FL; return yENDPACKAGE; }
 	YY_BREAK
 case 242:
 YY_RULE_SETUP
 #line 457 "../verilog.l"
-{ FL; return yENDPROPERTY; }
+{ FL; return yENDPROGRAM; }
 	YY_BREAK
 case 243:
 YY_RULE_SETUP
 #line 458 "../verilog.l"
-{ FL; return yENUM; }
+{ FL; return yENDPROPERTY; }
 	YY_BREAK
 case 244:
 YY_RULE_SETUP
 #line 459 "../verilog.l"
-{ FL; return yEXPORT; }
+{ FL; return yENUM; }
 	YY_BREAK
 case 245:
 YY_RULE_SETUP
 #line 460 "../verilog.l"
-{ FL; return yFINAL; }
+{ FL; return yEXPORT; }
 	YY_BREAK
 case 246:
 YY_RULE_SETUP
 #line 461 "../verilog.l"
-{ FL; return yIFF; }
+{ FL; return yFINAL; }
 	YY_BREAK
 case 247:
 YY_RULE_SETUP
 #line 462 "../verilog.l"
-{ FL; return yIMPORT; }
+{ FL; return yIFF; }
 	YY_BREAK
 case 248:
 YY_RULE_SETUP
 #line 463 "../verilog.l"
-{ FL; return yINSIDE; }
+{ FL; return yIMPORT; }
 	YY_BREAK
 case 249:
 YY_RULE_SETUP
 #line 464 "../verilog.l"
-{ FL; return yINT; }
+{ FL; return yINSIDE; }
 	YY_BREAK
 case 250:
 YY_RULE_SETUP
 #line 465 "../verilog.l"
-{ FL; return yINTERFACE; }
+{ FL; return yINT; }
 	YY_BREAK
 case 251:
 YY_RULE_SETUP
 #line 466 "../verilog.l"
-{ FL; return yLOGIC; }
+{ FL; return yINTERFACE; }
 	YY_BREAK
 case 252:
 YY_RULE_SETUP
 #line 467 "../verilog.l"
-{ FL; return yLONGINT; }
+{ FL; return yLOGIC; }
 	YY_BREAK
 case 253:
 YY_RULE_SETUP
 #line 468 "../verilog.l"
-{ FL; return yMODPORT; }
+{ FL; return yLONGINT; }
 	YY_BREAK
 case 254:
 YY_RULE_SETUP
 #line 469 "../verilog.l"
-{ FL; return yPACKAGE; }
+{ FL; return yMODPORT; }
 	YY_BREAK
 case 255:
 YY_RULE_SETUP
 #line 470 "../verilog.l"
-{ FL; return yPACKED; }
+{ FL; return yPACKAGE; }
 	YY_BREAK
 case 256:
 YY_RULE_SETUP
 #line 471 "../verilog.l"
-{ FL; return yPRIORITY; }
+{ FL; return yPACKED; }
 	YY_BREAK
 case 257:
 YY_RULE_SETUP
 #line 472 "../verilog.l"
-{ FL; return yPROGRAM; }
+{ FL; return yPRIORITY; }
 	YY_BREAK
 case 258:
 YY_RULE_SETUP
 #line 473 "../verilog.l"
-{ FL; return yPROPERTY; }
+{ FL; return yPROGRAM; }
 	YY_BREAK
 case 259:
 YY_RULE_SETUP
 #line 474 "../verilog.l"
-{ FL; return yPURE; }
+{ FL; return yPROPERTY; }
 	YY_BREAK
 case 260:
 YY_RULE_SETUP
 #line 475 "../verilog.l"
-{ FL; return yRAND; }
+{ FL; return yPURE; }
 	YY_BREAK
 case 261:
 YY_RULE_SETUP
 #line 476 "../verilog.l"
-{ FL; return yRANDC; }
+{ FL; return yRAND; }
 	YY_BREAK
 case 262:
 YY_RULE_SETUP
 #line 477 "../verilog.l"
-{ FL; return yRETURN; }
+{ FL; return yRANDC; }
 	YY_BREAK
 case 263:
 YY_RULE_SETUP
 #line 478 "../verilog.l"
-{ FL; return ySHORTINT; }
+{ FL; return yRETURN; }
 	YY_BREAK
 case 264:
 YY_RULE_SETUP
 #line 479 "../verilog.l"
-{ FL; return ySTATIC; }
+{ FL; return ySHORTINT; }
 	YY_BREAK
 case 265:
 YY_RULE_SETUP
 #line 480 "../verilog.l"
-{ FL; return ySTRING; }
+{ FL; return ySTATIC; }
 	YY_BREAK
 case 266:
 YY_RULE_SETUP
 #line 481 "../verilog.l"
-{ FL; return ySTRUCT; }
+{ FL; return ySTRING; }
 	YY_BREAK
 case 267:
 YY_RULE_SETUP
 #line 482 "../verilog.l"
-{ FL; return yTIMEPRECISION; }
+{ FL; return ySTRUCT; }
 	YY_BREAK
 case 268:
 YY_RULE_SETUP
 #line 483 "../verilog.l"
-{ FL; return yTIMEUNIT; }
+{ FL; return yTIMEPRECISION; }
 	YY_BREAK
 case 269:
 YY_RULE_SETUP
 #line 484 "../verilog.l"
-{ FL; return yTYPE; }
+{ FL; return yTIMEUNIT; }
 	YY_BREAK
 case 270:
 YY_RULE_SETUP
 #line 485 "../verilog.l"
-{ FL; return yTYPEDEF; }
+{ FL; return yTYPE; }
 	YY_BREAK
 case 271:
 YY_RULE_SETUP
 #line 486 "../verilog.l"
-{ FL; return yUNION; }
+{ FL; return yTYPEDEF; }
 	YY_BREAK
 case 272:
 YY_RULE_SETUP
 #line 487 "../verilog.l"
-{ FL; return yUNIQUE; }
+{ FL; return yUNION; }
 	YY_BREAK
 case 273:
 YY_RULE_SETUP
 #line 488 "../verilog.l"
-{ FL; return yVAR; }
+{ FL; return yUNIQUE; }
 	YY_BREAK
 case 274:
 YY_RULE_SETUP
 #line 489 "../verilog.l"
+{ FL; return yVAR; }
+	YY_BREAK
+case 275:
+YY_RULE_SETUP
+#line 490 "../verilog.l"
 { FL; return yVOID; }
 	YY_BREAK
 /*     Generic unsupported warnings */
 /* Note assert_strobe was in SystemVerilog 3.1, but removed for SystemVerilog 2005 */
-case 275:
-YY_RULE_SETUP
-#line 492 "../verilog.l"
-{ yyerrorf("Unsupported: SystemVerilog 2005 reserved word not implemented: %s",yytext); }
-	YY_BREAK
 case 276:
 YY_RULE_SETUP
 #line 493 "../verilog.l"

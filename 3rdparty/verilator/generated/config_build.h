@@ -25,7 +25,7 @@
 //**** Version and host name
 
 // Autoconf substitutes this with the strings from AC_INIT.
-#define PACKAGE_STRING "Verilator 3.919 devel"
+#define PACKAGE_STRING "Verilator 3.921 devel"
 
 #define DTVERSION PACKAGE_STRING
 
