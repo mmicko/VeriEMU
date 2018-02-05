@@ -56,8 +56,14 @@ project("verilator")
 	}
 	
 	configuration { "gmake or ninja" }
+		if _OPTIONS["gcc"]~=nil and string.find(_OPTIONS["gcc"], "gcc") then
+			if version >= 60000 then
+				buildoptions {
+					"-faligned-new",
+				}
+			end
+		end	
 		buildoptions {
-			"-faligned-new",
 			"-fno-delete-null-pointer-checks ",
 			"-Wno-unused-parameter",
 			"-Wno-shadow",
