@@ -356,6 +356,10 @@ if (MACHINES["TTL74148"]~=null) then
 	files {
 		MAME_DIR .. "src/devices/machine/74148.cpp",
 		MAME_DIR .. "src/devices/machine/74148.h",
+		GEN_DIR  .. "rtl/devices/machine/Vttl_74148.cpp",
+		GEN_DIR  .. "rtl/devices/machine/Vttl_74148.h",
+		GEN_DIR  .. "rtl/devices/machine/Vttl_74148__Syms.cpp",
+		GEN_DIR  .. "rtl/devices/machine/Vttl_74148__Syms.h",
 	}
 end
 

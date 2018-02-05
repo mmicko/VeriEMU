@@ -19,6 +19,13 @@ function devicesProject(_target, _subtarget)
 	uuid (os.uuid("optional-" .. _target .."_" .. _subtarget))
 	kind (LIBTYPE)
 	targetsubdir(_target .."_" .. _subtarget)
+	
+	defines {
+		"VM_TRACE=0",
+		"VL_THREADED=0",
+		"VM_SC=0",
+		"VL_PRINTF=printf",
+	}
 
 	if (_OPTIONS["targetos"] ~= "asmjs") then
 		options {
@@ -37,6 +44,7 @@ function devicesProject(_target, _subtarget)
 		MAME_DIR .. "src/lib",
 		MAME_DIR .. "src/lib/util",
 		MAME_DIR .. "3rdparty",
+		MAME_DIR .. "3rdparty/verilator/include",
 		GEN_DIR  .. "emu",
 		GEN_DIR  .. "emu/layout",
 		ext_includedir("expat"),
