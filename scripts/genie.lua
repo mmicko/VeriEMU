@@ -91,6 +91,16 @@ function addprojectflags()
 			}
 		end
 	end
+	defines {
+		"VM_TRACE=0",
+		"VL_THREADED=0",
+		"VM_SC=0",
+		"VL_PRINTF=printf",
+	}
+	includedirs {
+		MAME_DIR .. "3rdparty/verilator/include",
+		GEN_DIR  .. "rtl/devices",
+	}
 end
 
 CPUS = {}

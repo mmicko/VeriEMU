@@ -191,6 +191,7 @@ end
 	links {
 		"optional",
 		"emu",
+		"verilated",
 	}
 --if (STANDALONE~=true) then
 	links {

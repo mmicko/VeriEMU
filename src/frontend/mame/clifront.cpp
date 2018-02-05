@@ -33,6 +33,7 @@
 #include <algorithm>
 #include <new>
 #include <ctype.h>
+#include "verilated.h"
 
 
 //**************************************************************************
@@ -267,7 +268,7 @@ int cli_frontend::execute(std::vector<std::string> &args)
 	// wrap the core execution in a try/catch to field all fatal errors
 	m_result = EMU_ERR_NONE;
 	mame_machine_manager *manager = mame_machine_manager::instance(m_options, m_osd);
-
+ 	Verilated::commandArgs(0, (const char **)nullptr);
 	try
 	{
 		start_execution(manager, args);

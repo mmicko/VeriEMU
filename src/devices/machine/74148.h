@@ -45,6 +45,7 @@
 
 #pragma once
 
+#include "machine/Vttl_74148.h"
 
 typedef device_delegate<void (void)> ttl74148_output_delegate;
 
@@ -89,6 +90,8 @@ private:
 	int m_last_output;
 	int m_last_output_valid;
 	int m_last_enable_output;
+
+  std::unique_ptr<Vttl_74148> v;
 };
 
 DECLARE_DEVICE_TYPE(TTL74148, ttl74148_device)

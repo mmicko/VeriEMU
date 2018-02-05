@@ -47,6 +47,7 @@ function devicesProject(_target, _subtarget)
 		MAME_DIR .. "3rdparty/verilator/include",
 		GEN_DIR  .. "emu",
 		GEN_DIR  .. "emu/layout",
+		GEN_DIR  .. "rtl/devices",
 		ext_includedir("expat"),
 		ext_includedir("flac"),
 		MAME_DIR .. "3rdparty/asio/include",
